@@ -2,16 +2,17 @@
 #define MAX 10
 
 int main (){
-    int resultado;
+    int iCont=1, jCont=1;
 
-    for (int i = 1; i <= MAX ; i++){
-        printf("Tabuada do %d\n", i);
-        for (int j = 1; j <= MAX; j++){
-            resultado = i*j;
-            printf("%d x %d = %d \n", i, j, resultado);
+    while (iCont <= MAX){
+        printf("Tabuada do %d\n", iCont);
+        while (jCont <= MAX){
+            printf("%d x %d = %d \n", iCont, jCont, (iCont *  jCont));
+            jCont++;
         }
         printf("\n");
-        resultado=0;
+        jCont=0;
+        iCont++;
     }
     
 }
