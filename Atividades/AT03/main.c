@@ -16,10 +16,10 @@
 
 int main (){
     int n, resultado;
-    printf("Insira um valor");
+    printf("Insira um valor: ");
     scanf("%d", &n);
     resultado = chamandoTeste(n);
     printf("o resultado é: %d \n", resultado);
-    
+
     return 0;
 }

@@ -3,7 +3,7 @@
 
 int chamandoTeste(int numero){
     
-    int result = numero * 2;
+    int result = numero * numero;
 
     return result;
 }
