@@ -1,0 +1,1 @@
+int chamandoTeste(int numero);

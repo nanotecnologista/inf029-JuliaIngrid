@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
+ /*                        _
+                         / /
+               __   __  '-'__  ___     ___
+              |  | |  |   |  ||   |   |   |
+              |  | |  |   |  ||   |___|   |
+         __   |  | |  |   |  ||   '___'   |
+        |  |__|  | |   ---   ||   |   |   | 
+         \__ __ _|  \_______/ '___'   '___' */
+
+
 int main (){
     int  escolha=0, continua=1, contadora=0;
     float valor=0, resultado=0;
@@ -42,6 +52,12 @@ int main (){
             case 4: //Dividir
                 printf("Dividindo\n");
                 scanf("%f", &valor);
+
+                while (valor == 0){
+                printf ("Não é possivel dividir por 0!\nDigite outro segundo valor:");
+                scanf ("%f", &valor);
+                }
+
                 resultado/=valor;
                 printf("o Resultado é: %.2f\n", resultado);
 
