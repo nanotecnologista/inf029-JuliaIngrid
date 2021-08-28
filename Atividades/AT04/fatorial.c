@@ -1,6 +1,6 @@
 #include <stdio.h>
 
- /*             _
+ /*                        _
                          / /
                __   __  '-'__  ___     ___
               |  | |  |   |  ||   |   |   |
@@ -13,13 +13,16 @@
 int fatorial (int numero){
     int fat, error=-1;
 
+    fat= numero; // pro calc.ficar certo
+
     if (numero > 12){
         printf ("Não é possivel calcular o fatorial\n");
         return error;
     }
     
-    for(fat = 1; numero > 1; numero = numero - 1); //
-    fat = fat * numero;
+    for(int i = 1; i < numero; i++){
+        fat = fat * i;
+    }
 
     return fat;
 }
