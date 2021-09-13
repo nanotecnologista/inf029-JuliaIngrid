@@ -15,6 +15,7 @@ struct Numeros {
     int num1, num2, num3, num4;
 };
 
+int x;
 
 struct Numeros ler4numeros(){
     struct Numeros numeros;
@@ -41,7 +42,6 @@ int main( ){
     resultado = ler4numeros();
     
     // for (int i = 0; i <= 4; i++){
-x
     //     printf ("o num %d que vc digitou foi: %d", i, resultado.i);
     // }
 
