@@ -6,6 +6,7 @@
 
 int *ler3numeros(){
     static int vet[3];
+    
     int i=0;
 
     for ( i = 0; i < 3; i++){
