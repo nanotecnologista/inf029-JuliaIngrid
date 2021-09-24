@@ -1,0 +1,1 @@
+int SubMenu(int primeiraEscolha);
