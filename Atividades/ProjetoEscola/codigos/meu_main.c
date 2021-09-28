@@ -10,30 +10,32 @@ int main (){
     do { // loop para o menu ficar ativo sempre
 
         printf ("\tSistema da escola:");
-        printf ("[1] Aluno \n [2] Professor \n [3] Disciplina \n [4] Relatórios \n [0] Sair\n ");
+        
+        printf ("[1] Atualizar \n [2] Excluir \n [3] cadastrar \n [4] Relatorios \n [0]Fechar \n");
+        
         scanf("%d", &escolha);
 
         switch (escolha){
         
-        case 1: // Caso escolha Aluno
-            //chamando função de aluno
-            SubMenu(escolha);
+        case 1: // Caso escolha Atualizar
+            //chamando função
+            atualizar( );
         break;
         
-        case 2: //Caso escolha Professor
-            // Professor()
+        case 2: //Caso escolha Excluir
+            excluir( );
         break;
         
         case 3: // Caso escolha Disciplina
             //chamando função 
-            //Disciplina();
+            cadastrar( );
         break;
         
         case 4: // Caso escolha Relatórios
             //chamando  função
-            // Relatorios();
+            relatorios( );
         break;
-        ajdjbrjel
+        
         case 0:
             return 0;
         break;
