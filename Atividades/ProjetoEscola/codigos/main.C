@@ -31,7 +31,7 @@ int main (){
         
         case 4: // Caso escolha Relatórios
             //chamando  função
-            // Relatorios();
+            // Relatorios()
         break;
         
         case 0:
